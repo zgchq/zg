@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background: #2563eb;
+  color: #fff;
+  padding: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 16px;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* 首页专属 */
+.main {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+}
+.main h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+.main p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 32px;
+}
+.btn-group a {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+.btn-outline {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: #eff6ff;
+}
+.tip {
+  margin-top: 20px;
+  color: green;
+}
+
+/* 表单通用（登录+注册共用） */
+.form-wrap {
+  width: 100%;
+  max-width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.form-wrap h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #1f2937;
+}
+.form-item {
+  margin-bottom: 20px;
+}
+.form-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+.form-item input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+.form-item input:focus {
+  border-color: #2563eb;
+}
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+.link-tip {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.link-tip a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.msg {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+}

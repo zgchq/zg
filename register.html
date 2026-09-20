@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link rel="stylesheet" href="style/common.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-wrap">
+        <div class="logo">我的网站</div>
+        <nav class="nav">
+          <a href="index.html">首页</a>
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="form-wrap">
+      <h2>用户注册</h2>
+      <div class="msg" id="msg"></div>
+      <form id="regForm">
+        <div class="form-item">
+          <label>用户名</label>
+          <input type="text" id="username" placeholder="请输入用户名" />
+        </div>
+        <div class="form-item">
+          <label>密码</label>
+          <input type="password" id="pwd" placeholder="请输入密码" />
+        </div>
+        <div class="form-item">
+          <label>确认密码</label>
+          <input type="password" id="pwd2" placeholder="再次输入密码" />
+        </div>
+        <button class="submit-btn" type="submit">注册</button>
+      </form>
+      <div class="link-tip">已有账号？<a href="login.html">去登录</a></div>
+    </div>
+
+    <footer>Copyright © 2026 前端演示项目</footer>
+    <!-- 在login.html、register.html的script部分，优先引入公共js -->
+    <script src="script/common.js"></script>
+    <script src="script/register.js"></script>
+  </body>
+</html>

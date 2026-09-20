@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的GitHub静态主页</title>
-    <!-- 外部引入CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>首页</title>
+    <link rel="stylesheet" href="style/common.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>你好，欢迎访问我的静态网页</h1>
-      <p>当前时间：<span id="time"></span></p>
-      <p id="tip">点击下面按钮,试试JS交互效果</p>
-      <button class="btn" onclick="changeText()">点击更换文字</button>
-      <a class="btn" href="https://github.com" target="_blank"
-        >访问我的Github</a
-      >
-    </div>
-    <footer>Powered by GitHub Pages</footer>
+    <header>
+      <div class="container header-wrap">
+        <div class="logo">我的网站</div>
+        <nav class="nav">
+          <a href="index.html">首页</a>
+          <a href="login.html">登录</a>
+          <a href="register.html">注册</a>
+          <!-- 退出登录按钮，登录后才会显示 -->
+          <a id="logoutBtn" href="javascript:logout()" style="display: none"
+            >退出登录</a
+          >
+        </nav>
+      </div>
+    </header>
 
-    <!-- 外部引入JS -->
-    <script src="./js/script.js"></script>
+    <main class="container main">
+      <h1>欢迎来到主页</h1>
+      <p id="userTip">请先登录或注册账号体验完整功能</p>
+      <div class="btn-group">
+        <a href="login.html" class="btn-primary">去登录</a>
+        <a href="register.html" class="btn-outline">立即注册</a>
+      </div>
+    </main>
+
+    <footer>Copyright © 2026 前端演示项目</footer>
+    <!-- 先引入公共JS，再引入首页JS -->
+    <script src="script/common.js"></script>
+    <script src="script/index.js"></script>
   </body>
 </html>
